@@ -14,18 +14,52 @@
 <body>
     <div id="app">
         <main class="container-main">
-            <form action="">
-                <div id="informacoes">
-                    <div id="setaEsquerda">
-                        <img src="assets/svgs/arrow-left-02.svg" alt="">
-                        <h4>Voltar</h4>
-                    </div>
-                    <div id="informacoesForms">
-                        <h1>Formulário de matrícula</h1>
-                        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-                    </div>
+            <div id="informacoes">
+                <div id="setaEsquerda">
+                    <img src="assets/svgs/arrow-left-02.svg" alt="">
+                    <h4>Voltar</h4>
                 </div>
-                
+                <div id="informacoesForms">
+                    <h1>Formulário de matrícula</h1>
+                    <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+                </div>
+            </div>
+            
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <div class="input-wrapper">
+                        <label for="nomeCompleto">Nome completo</label><br>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Qual o nome da criança?">
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="birth">Data de nascimento</label><br>
+                        <input type="date" id="birth" name="birth" placeholder="DD/MM/AAAA">
+                    </div>
+                    
+                    <div class="select-wrapper">
+                        <label for="gender">Sexo</label><br>
+                        <select type="date" id="gender" name="gender" placeholder="Feminino">
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
+                            <option value="NA">Prefiro não dizer</option>
+                        </select>
+                    </div>
+                    
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea id="medical-info" id="medical-info" cols="30" rows="10" 
+                        placeholder="A criança possui alguma condição médica que a escola deve saber?"
+                        ></textarea>
+                    </div>
+                    
+                    <div class="droparea-wrapper">
+                        <input type="file" id="birth-file" name="birth-file"><br>
+                        <img src="assets/svgs/cloud-upload.svg" alt="">
+                        <p>Clique aqui para <br> selecionar os arquivos</p>
+                    </div>
+                </fieldset>
+
             </form>
         </main>
 
