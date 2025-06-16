@@ -37,3 +37,8 @@
     --support-violet: #C3B2E7;
     --support-pink: #F682A5;
 }
+
+a{
+    color: var(--text-secondary);
+    text-decoration: none;
+}
