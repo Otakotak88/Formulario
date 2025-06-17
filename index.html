@@ -13,58 +13,73 @@
 </head>
 <body>
     <div id="app">
-        <main class="container-main">
-            <div id="informacoes">
-                <div id="setaEsquerda">
-                    <img src="assets/svgs/arrow-left-02.svg" alt="">
+        <main class="container main-flex main-container">
+            <div class="frame">
+                <a href="#" class="voltarBTN">
+                    <img src="assets/svgs/arrow-left-02.svg" alt="Seta para esquerda">
                     <h4>Voltar</h4>
-                </div>
-                <div id="informacoesForms">
-                    <h1>Formulário de matrícula</h1>
+                </a>
+                <div>
+                    <h2>Formulário de matrícula</h2>
                     <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
                 </div>
             </div>
-            
+
             <form action="" method="post" enctype="multipart/form-data">
-                <fieldset>
+                <fieldset class="child-info">
+                    <legend>Informações da criança</legend>
+
                     <div class="input-wrapper">
-                        <label for="nomeCompleto">Nome completo</label><br>
-                        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Qual o nome da criança?">
+                        <label for="child-name">Nome completo</label><br>
+                        <input type="text" 
+                        name="child-name" 
+                        id="child-name"
+                        placeholder="Nome da criança"><br>
                     </div>
-                    
+
                     <div class="input-wrapper">
-                        <label for="birth">Data de nascimento</label><br>
-                        <input type="date" id="birth" name="birth" placeholder="DD/MM/AAAA">
+                        <label for="child-birth">Data de nascimento</label><br>
+                        <input type="date" 
+                        name="child-birth" 
+                        id="child-birth"><br>
                     </div>
-                    
-                    <div class="select-wrapper">
-                        <label for="gender">Sexo</label><br>
-                        <select type="date" id="gender" name="gender" placeholder="Feminino">
+
+                    <div class="option-wrapper">
+                        <label for="child-gender">Sexo</label><br>
+                        <select name="child-gender" id="child-gender">
                             <option value="female">Feminino</option>
                             <option value="male">Masculino</option>
                             <option value="NA">Prefiro não dizer</option>
                         </select>
                     </div>
-                    
+
                     <div class="textarea-wrapper">
-                        <label for="medical-info">Informações médicas</label>
-                        <textarea id="medical-info" id="medical-info" cols="30" rows="10" 
-                        placeholder="A criança possui alguma condição médica que a escola deve saber?"
-                        ></textarea>
+                        <label for="child-medical-info">Informações médicas</label><br>
+                        <textarea name="child-medical-info" 
+                                  id="child-medical-info"
+                                  cols="30"
+                                  rows="10"
+                                  placeholder="A criança possui alguma condição médica que a escola deva estar ciente?"></textarea><br>
                     </div>
                     
-                    <div class="droparea-wrapper">
-                        <input type="file" id="birth-file" name="birth-file"><br>
-                        <img src="assets/svgs/cloud-upload.svg" alt="">
-                        <p>Clique aqui para <br> selecionar os arquivos</p>
+                    <div class="file-wrapper">
+                        <input type="file" name="child-file" id="child-file"><br>
+                        <img src="assets/svgs/cloud-upload.svg" alt=""><br>
+                        <p>clique aqui para <br> selecionar arquivos</p>
                     </div>
                 </fieldset>
-
             </form>
         </main>
 
-        <aside class="container-aside">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sunt qui alias asperiores maiores architecto dolore inventore quos nostrum. Totam suscipit eligendi iure repellat dolores in impedit pariatur debitis optio?
+        <aside class="bg-surface-color">
+            <div class="container">
+                <div id="aside-flex">    
+                    <img src="assets/Logo.svg" alt="Logo da marca">
+                    <h1>Porque cada momento de <span class="destaque">aprendizado</span> conta</h1>
+                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                </div>
+                <img src="assets/svgs/Illustration.svg" alt="Ilustração de uma professora mostrando seu desenho para crianças">
+            </div>
         </aside>
     </div>
 </body>

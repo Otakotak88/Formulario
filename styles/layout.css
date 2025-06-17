@@ -4,17 +4,51 @@
     grid-template-columns: 51.25% 48.75%;
     overflow: hidden;
 }
-
-.container-main{
+main{
     overflow: auto;
-    padding: 4rem;
-    background-color: var(--surface-primary);
-    max-width: 33rem;
     margin-left: auto;
+    & .main-container{
+        max-width: 33rem;
+    }
+}
+.bg-surface-color{
+    background-color: var(--surface-secondary);
 }
 
-.container-aside{
+.container{
     padding: 4rem;
-    background-color: var(--surface-secondary);
-    max-width: 31rem;
+}
+
+#aside-flex{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    & img{
+        max-width: 210px;
+    };
+    & h1{
+        font: 600 2.5rem/125% var(--font-family);
+    };
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    & > a{
+        max-width: 110px;
+        display:flex;
+        gap: 0.5rem;
+    } & > div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.main-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }

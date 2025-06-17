@@ -42,3 +42,19 @@ a{
     color: var(--text-secondary);
     text-decoration: none;
 }
+
+body{
+    font: var(--text);
+    color: var(--text-secondary);
+}
+h1, h2{
+    color: var(--text-primary);
+}
+
+.destaque{
+    color: var(--text-highlight);
+}
+
+img{
+    max-width: 100%;
+}
