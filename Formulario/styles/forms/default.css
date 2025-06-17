@@ -1,0 +1,21 @@
+fieldset{
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label, input, select, textarea{
+    width: 100%;
+    appearance: none;
+}
+input, select, textarea{
+    border: 1px solid var(--stroke-default);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
+input:focus, select:focus, textarea:focus{
+    border: 1px solid var(--stroke-highlight);
+    outline: 3px solid var(--surface-secondary);
+}
