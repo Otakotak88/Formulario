@@ -128,6 +128,7 @@
                         name="parent-name"
                         id="parent-name"
                         placeholder="Leandro Carlos de Amaral">
+                        <small>Principal responsável legal e contato de emergência</small>
                     </div>
 
                     <div class="input-wrapper">
@@ -140,10 +141,15 @@
 
                     <div class="input-wrapper">
                         <label for="parent-mail">E-mail</label>
-                        <input type="text"
+                        <input type="email"
                         name="parent-mail"
                         id="parent-mail"
-                        placeholder="PapaiLegal@gmail.com">
+                        placeholder="PapaiLegal@gmail.com"
+                        required>
+                        <div class="error">
+                            <img src="assets/svgs/alert-circle.svg" alt="Alerta de erro">
+                            <span>Insira um e-mail válido</span>
+                        </div>
                     </div>
                 </fieldset>
             </form>
