@@ -52,3 +52,15 @@ main{
     flex-direction: column;
     gap: 3rem;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.multiple-input{
+    display: grid;
+    grid-template-columns: calc(62% - 1.25rem) 38%;
+    gap: 1.25rem;
+}
