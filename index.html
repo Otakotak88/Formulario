@@ -72,54 +72,79 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="address-info">
                     <legend>Endereço residencial</legend>
 
                     <div class="input-wrapper">
-                        <label for="personal-CEP">CEP</label>
+                        <label for="address-CEP">CEP</label>
                         <input type="text"
-                        name="personal-CEP"
-                        id="personal-CEP"
+                        name="address-CEP"
+                        id="address-CEP"
                         placeholder="01234-567">
                     </div>
 
                     <div class="multiple-input">
                         <div class="input-wrapper">
-                            <label for="personal-street">Rua</label>
+                            <label for="address-street">Rua</label>
                             <input type="text"
-                            name="personal-street"
-                            id="personal-street"
-                            placeholder="Rua Felipe dos Anjos">
+                            name="address-street"
+                            id="address-street"
+                            placeholder="Rua Felipe dos Anjos"
+                            disabled>
                         </div>
                         <div class="input-wrapper">
-                            <label for="personal-number">Número</label>
+                            <label for="address-number">Número</label>
                             <input type="number"
-                            name="personal-number"
-                            id="personal-number"
+                            name="address-number"
+                            id="address-number"
                             placeholder="123">
                         </div>
                     </div>
 
                     <div class="multiple-input">
                         <div class="input-wrapper">
-                            <label for="personal-city">Cidade</label>
+                            <label for="address-city">Cidade</label>
                             <input type="text"
-                            name="personal-city"
-                            id="personal-city"
-                            placeholder="Tubarão">
+                            name="address-city"
+                            id="address-city"
+                            placeholder="Tubarão" 
+                            disabled>
                         </div>
                         <div class="input-wrapper">
-                            <label for="personal-state">Estado</label>
+                            <label for="address-state">Estado</label>
                             <input type="text"
-                            name="personal-state"
-                            id="personal-state"
-                            placeholder="Santa Catarina">
+                            name="address-state"
+                            id="address-state"
+                            placeholder="Santa Catarina" 
+                            disabled>
                         </div>
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="parent-info">
+                    <div class="input-wrapper">
+                        <label for="parent-name">Nome do responsável</label>
+                        <input type="text"
+                        name="parent-name"
+                        id="parent-name"
+                        placeholder="Leandro Carlos de Amaral">
+                    </div>
 
+                    <div class="input-wrapper">
+                        <label for="parent-phone">Número de telefone</label>
+                        <input type="number"
+                        name="parent-phone"
+                        id="parent-phone"
+                        placeholder="(12)34567-8901">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="parent-mail">E-mail</label>
+                        <input type="text"
+                        name="parent-mail"
+                        id="parent-mail"
+                        placeholder="PapaiLegal@gmail.com">
+                    </div>
                 </fieldset>
             </form>
         </main>

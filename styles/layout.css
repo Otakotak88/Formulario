@@ -11,6 +11,10 @@ main{
         max-width: 33rem;
     }
 }
+form:last-child{
+    margin-bottom: 4rem;
+}
+
 .bg-surface-color{
     background-color: var(--surface-secondary);
 }
